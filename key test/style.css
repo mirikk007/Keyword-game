@@ -1,0 +1,118 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #1b2735 0%, #090a0f 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: #ff00bb;
+    text-shadow: 0 0 15px #9d00ff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .panel {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #00ffff44;
+    border-radius: 16px;
+    padding: 25px 40px;
+    box-shadow: 0 0 25px #00ffff33;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  select, button {
+    background: #00ffff;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 8px;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+
+  select:hover, button:hover {
+    background: #00aaff;
+    transform: scale(1.05);
+  }
+
+  .word-box {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 15px #00ffff;
+    margin: 25px 0;
+    transition: 0.2s;
+  }
+
+  input {
+    font-size: 1.2em;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #00ffff;
+    background: #111;
+    color: #00ffff;
+    outline: none;
+    text-align: center;
+    width: 260px;
+    transition: 0.2s;
+  }
+
+  input:focus {
+    box-shadow: 0 0 15px #00ffff;
+  }
+
+  .stats {
+    margin-top: 15px;
+    font-size: 1.1em;
+  }
+
+  .timer {
+    font-size: 1.4em;
+    color: #ffcc00;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #ffcc00;
+  }
+
+  .correct {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+  }
+
+  .wrong {
+    color: #ff4444;
+    text-shadow: 0 0 10px #ff4444;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .game-over {
+    animation: blink 1s infinite alternate;
+    font-size: 1.4em;
+    color: #ffcc00;
+  }
+
+  @keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+  }
+
+  .button-group {
+    margin-top: 10px;
+  }
